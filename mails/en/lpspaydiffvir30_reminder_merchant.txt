@@ -1,0 +1,11 @@
+
+{shop_url}
+
+The order with the reference {reference} made on {date_order} by the customer Surname {firstname} {lastname} {company}
+and whose balance is {total_paid} is still awaiting payment.
+
+Payment must be received by {limit_date} at the latest
+
+A reminder mail has just been automatically sent.
+
+[{shop_name}]({shop_url})

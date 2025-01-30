@@ -1,0 +1,12 @@
+
+{shop_url}
+
+La commande ayant pour référence {reference} effectuée le {date_order} par le client firstname} {lastname} {company}
+et dont le solde est de {total_paid} est toujours en attente de paiement.
+
+Le paiement devra parvenir au plus tard le {date_limit}.
+
+Un mail de relance vient d'être automatiquement envoyé.
+
+[{shop_name}]({shop_url})
+

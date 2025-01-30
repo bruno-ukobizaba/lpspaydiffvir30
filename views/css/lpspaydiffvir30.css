@@ -1,0 +1,72 @@
+/**
+ * Loulou66
+ * LpsPayDiffVir30 module for Prestashop
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future. If you wish to customize PrestaShop for your
+ * needs please refer to http://www.prestashop.com for more information.
+ *
+ *  @author    Loulou66.fr <contact@loulou66.fr>
+ *  @copyright loulou66.fr
+ *  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+p.payment_module a.lpspaydiffvir30 {
+  background: url(../img/paydiff.png) 15px 15px no-repeat #fbfbfb;
+}
+p.payment_module a.lpspaydiffvir30:after {
+  display: block;
+  content: "\f054";
+  position: absolute;
+  right: 15px;
+  margin-top: -11px;
+  top: 50%;
+  font-family: "FontAwesome";
+  font-size: 25px;
+  height: 22px;
+  width: 14px;
+  color: #777;
+}
+#module-lpspaydiffvir30-lpspaydiffvir30CustomerAccount .page-content {
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+  padding: 1rem;
+  font-size: 0.875rem;
+  color: #7a7a7a;
+}
+#module-lpspaydiffvir30-lpspaydiffvir30customeraccount .page-content h6 {
+  margin-bottom: 1.125rem;
+}
+#module-lpspaydiffvir30-lpspaydiffvir30customeraccount #content {
+  padding: 1rem;
+  background: #fff;
+  font-size: 0.875rem;
+  color: #7a7a7a;
+}
+@media only screen and (max-width: 767px) {
+  #module-lpspaydiffvir30-lpspaydiffvir30customeraccount .orders {
+    margin: 0 -1rem;
+  }
+  #module-lpspaydiffvir30-lpspaydiffvir30customeraccount .orders .order {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #f6f6f6;
+  }
+  #module-lpspaydiffvir30-lpspaydiffvir30customeraccount .orders .order .label {
+    display: inline-block;
+    padding: 0.25rem 0.375rem;
+    margin: 0.25rem 0;
+    color: #fff;
+    border-radius: 3px;
+  }
+  #module-lpspaydiffvir30-lpspaydiffvir30customeraccount .orders .order a h3 {
+    color: #7a7a7a;
+  }
+}

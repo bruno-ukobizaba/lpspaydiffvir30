@@ -1,0 +1,14 @@
+
+{shop_url}
+
+Hi {firstname} {lastname},
+
+Payment reminder
+
+We would like to remind you that your order with the reference {reference} made on {date_order} with a balance of {total_paid} is still open in our account.
+
+We therefore ask you to pay the agreed amount before the {limit_date}. If your payment should cross the present, please disregard it.
+
+Thank you for your prompt payment.
+
+[{shop_name}]({shop_url})

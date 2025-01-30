@@ -1,0 +1,14 @@
+
+{shop_url}
+
+Bonjour {firstname} {lastname},
+
+Une nouvelle commande a été générée à votre demande.
+
+Nous nous permettons de vous rappeler que votre commande ayant pour référence {reference} effectuée le {date_order} et dont le solde est de {total_paid} est toujours ouverte dans notre compte.
+
+Nous vous prions dès lors de bien vouloir vous acquitter du montant convenu avant le {date_limit}. Si votre paiement devait croiser la présente, veuillez ne pas en tenir compte.
+
+Nous vous remercions de votre prompt règlement.
+
+{shop_name} [/{shop_url}]
