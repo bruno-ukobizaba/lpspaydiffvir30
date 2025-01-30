@@ -33,7 +33,7 @@ class AdminLpsPayDiffVir30Controller extends ModuleAdminController
         $this->lang = false;
         $this->allow_export = false;
         $this->deleted = false;
-        $this->table = 'lps_defered_payments2';
+        $this->table = 'lps_defered_payments_vir30';
         $this->id = 'id_lps_defered_payments';
         $this->className = 'LpsPayDiffVir30ListClass';
         $this->context = Context::getContext();
@@ -128,7 +128,7 @@ class AdminLpsPayDiffVir30Controller extends ModuleAdminController
     public function displayViewOrderLink($token = null, $id, $name = null)
     {
         $sql = 'SELECT lpsdp.`id_order`
-        FROM `' . _DB_PREFIX_ . 'lps_defered_payments2` lpsdp
+        FROM `' . _DB_PREFIX_ . 'lps_defered_payments_vir30` lpsdp
         WHERE lpsdp.`id_lps_defered_payments` = ' . (int) $id;
         $id_order = Db::getInstance()->getValue($sql);
         $tpl = $this->context->smarty->createTemplate(

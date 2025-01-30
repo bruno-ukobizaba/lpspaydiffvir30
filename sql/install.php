@@ -25,7 +25,7 @@ if (!defined('_PS_VERSION_')) {
 }
 
 $sql = [];
-$sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'lps_defered_payments2` (
+$sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'lps_defered_payments_vir30` (
     `id_lps_defered_payments` int(10) unsigned NOT NULL AUTO_INCREMENT,
     `id_order` int(10) unsigned NOT NULL,
     `reference` varchar(200) NOT NULL,

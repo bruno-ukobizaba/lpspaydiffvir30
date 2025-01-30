@@ -51,7 +51,7 @@ class LpsPayDiffVir30ListClass extends ObjectModel
     public $id_shop;
 
     public static $definition = [
-        'table' => 'lps_defered_payments2',
+        'table' => 'lps_defered_payments_vir30',
         'primary' => 'id_lps_defered_payments',
         'multilang' => false,
         'multilang_shop' => false,
@@ -86,7 +86,7 @@ class LpsPayDiffVir30ListClass extends ObjectModel
     public static function getDeferedPaymentByIDOrder($id_order, $id_shop)
     {
         $sql = 'SELECT lpsdp.`id_lps_defered_payments`
-            FROM `' . _DB_PREFIX_ . 'lps_defered_payments2` lpsdp
+            FROM `' . _DB_PREFIX_ . 'lps_defered_payments_vir30` lpsdp
             WHERE lpsdp.`id_order`=' . (int) $id_order . '
             AND lpsdp.`id_shop` =' . (int) $id_shop;
         $id_lps_defered_payments = Db::getInstance()->getValue($sql);
@@ -124,7 +124,7 @@ class LpsPayDiffVir30ListClass extends ObjectModel
     public static function getOrdersWaitingPaiement($id_customer, $id_shop, $id_lang)
     {
         $sql = 'SELECT lpsdp.*, os.`color`, osl.`name`
-            FROM `' . _DB_PREFIX_ . 'lps_defered_payments2` lpsdp
+            FROM `' . _DB_PREFIX_ . 'lps_defered_payments_vir30` lpsdp
             LEFT JOIN `' . _DB_PREFIX_ . 'order_state` os ON (lpsdp.`order_state` = os.`id_order_state`)
             LEFT JOIN `' . _DB_PREFIX_ . 'order_state_lang` osl ON
             (osl.`id_order_state` = os.`id_order_state` AND osl.`id_lang` =' . (int) $id_lang . ')
@@ -137,7 +137,7 @@ class LpsPayDiffVir30ListClass extends ObjectModel
     public static function getAllOrdersWaitingPaiement($id_shop)
     {
         $sql = 'SELECT lpsdp.*
-            FROM `' . _DB_PREFIX_ . 'lps_defered_payments2` lpsdp
+            FROM `' . _DB_PREFIX_ . 'lps_defered_payments_vir30` lpsdp
             WHERE lpsdp.`mail_send` = 0
             AND lpsdp.`paid` = 0
             AND lpsdp.`id_shop` =' . (int) $id_shop;
